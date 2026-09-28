@@ -4,7 +4,7 @@ import ListTags from "./ListTags";
 import Tables from "./Tables";
 import Images from "./Images";
 import Forms from "./forms/Forms";
-import HighlightedBoxLab from "../HighlightedParagraph";
+import HighlightedParagraph from "./HighlightedParagraph";
 import AnchorTag from "../AnchorTag";
 
 
@@ -19,7 +19,7 @@ export default function Lab1() {
       <Tables />
       <Images />
       <Forms />
-      <HighlightedBoxLab />
+      <HighlightedParagraph />
       <AnchorTag />
       {/* do the next exercise here */}
     </div>
