@@ -31,7 +31,7 @@ export default function ListTags() {
       </ol>
       <h5>Unordered List Tag</h5>
        My favorite books (in no particular order)
-      <ul id="wd-your-favorite-books">
+      <ul id="wd-your-books">
        <li>Oliver Twist</li>
        <li>Crime and Punishment</li>
        <li>Dracula</li>

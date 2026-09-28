@@ -29,7 +29,7 @@ export default function ParagraphTag() {
         pushes each paragraph away from the ones next to it, producing the
         visible gap.
       </p>
-      <p id="wwd-p-your-1">
+      <p id="wd-p-your-1">
         Hi, my name is Ruben Posadas and I am from Houston, Texas. I was born and raised there, and
         I moved to Boston for college.
       </p>
