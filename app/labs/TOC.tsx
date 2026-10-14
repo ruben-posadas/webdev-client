@@ -40,11 +40,6 @@ export default function TOC() {
             Kambaz
           </Link>
         </li>
-        <li>
-          <a href="https://github.com/ruben-posadas/webdev-client" id="wd-github">
-            My GitHub
-          </a>
-        </li>
       </ul>
     </nav>
   );
