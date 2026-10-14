@@ -5,7 +5,7 @@ export default function Dashboard() {
     <div id="wd-dashboard">
       <h1 id="wd-dashboard-title">Dashboard</h1>
       <hr />
-      <h2 id="wd-dashboard-published">Published Courses (3)</h2>
+      <h2 id="wd-dashboard-published">Published Courses (4)</h2>
       <hr />
       <div
         id="wd-dashboard-courses"
@@ -13,8 +13,8 @@ export default function Dashboard() {
       >
         <CourseCard
           id="1234"
-          title="CS67 React JS"
-          subtitle="Full Stack software developer"
+          title="CS6700 React JS"
+          subtitle="For full stack software development visionaries"
           image="/images/reactjs.jpg"
         />
         <CourseCard

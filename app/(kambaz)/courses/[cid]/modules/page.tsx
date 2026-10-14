@@ -53,10 +53,53 @@ export default function Modules() {
             <li className="wd-content-item">Creating a React Application</li>
           </Lesson>
         </Module>
-        <Module title="Week 2">{/* Expand lessons on your own */}</Module>
-        <Module title="Week 3" />
-
-        <Module title="Week 4, Lecture 1 -  Managing Client State">
+        <Module title="Week 2, Lecture 2 - Styling User Interfaces with CSS and Tailwind">
+          <Lesson title="LEARNING OBJECTIVES">
+            <li className="wd-content-item">
+              Styling React Components with CSS
+            </li>
+            <li className="wd-content-item">
+              Decorating Documents with React Icons
+            </li>
+            <li className="wd-content-item">
+              Styling Webpages with Tailwind CSS
+            </li>
+          </Lesson>
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Chapter 2 — Styling User Interfaces with CSS and Tailwind
+            </li>
+          </Lesson>
+          <Lesson title="SLIDES">
+            <li className="wd-content-item">CSS Intro</li>
+            <li className="wd-content-item">Colors</li>
+            <li className="wd-content-item">Box Model</li>
+          </Lesson>
+        </Module>
+        <Module title="Week 3, Lecture 3 - Creating Single Page Applications with JavaScript">
+          <Lesson title="LEARNING OBJECTIVES">
+            <li className="wd-content-item">
+              Introduction to JavaScript
+            </li>
+            <li className="wd-content-item">
+              JavaScript Functions
+            </li>
+            <li className="wd-content-item">
+              JavaScript Data Structures
+            </li>
+          </Lesson>
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Chapter 3 — Creating Single Page Applications with JavaScript
+            </li>
+          </Lesson>
+          <Lesson title="SLIDES">
+            <li className="wd-content-item">Variables and Constants</li>
+            <li className="wd-content-item">Variable Types</li>
+            <li className="wd-content-item">Booleans and Conditionals</li>
+          </Lesson>
+        </Module>
+        <Module title="Week 4, Lecture 4 - Managing Client State">
           <Lesson title="LEARNING OBJECTIVES">
             <li className="wd-content-item">
               Managing State and User Input with Forms
@@ -64,7 +107,7 @@ export default function Modules() {
             <li className="wd-content-item">
               Sharing State, Prop Drilling, and URLs
             </li>
-            <li>React Context</li>
+            <li className="wd-content-item">React Context</li>
           </Lesson>
           <Lesson title="READING">
             <li className="wd-content-item">

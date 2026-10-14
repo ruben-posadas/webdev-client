@@ -84,7 +84,7 @@ export default function PeopleTable() {
           <tr className="odd:bg-neutral-50">
             <td className="p-2 text-nowrap">
               <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-              Bruce Wayne
+              Peter Parker
             </td>
             <td className="p-2">001233464S</td>
             <td className="p-2">S101</td>
