@@ -4,12 +4,34 @@ import Lesson from "./Lesson";
 export default function Modules() {
   return (
     <div>
-      <button>Collapse All</button> <button>View Progress</button>{" "}
-      <select defaultValue="publish-all">
-        <option value="publish-all">Publish All</option>
-      </select>{" "}
-      <button>+ Module</button>
-      <ul id="wd-modules">
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+        >
+          Collapse All
+        </button>
+        <button
+          type="button"
+          className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+        >
+          View Progress
+        </button>
+        <select
+          defaultValue="publish-all"
+          className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+        >
+          <option value="publish-all">Publish All</option>
+        </select>
+        <button
+          type="button"
+          className="rounded border border-red-600 bg-red-600 px-3 py-1.5 text-sm font-medium text-white"
+        >
+          + Module
+        </button>
+      </div>
+
+      <ul id="wd-modules" className="m-0 list-none p-0">
         <Module title="Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda">
           <Lesson title="LEARNING OBJECTIVES">
             <li className="wd-content-item">Introduction to the course</li>
@@ -33,6 +55,32 @@ export default function Modules() {
         </Module>
         <Module title="Week 2">{/* Expand lessons on your own */}</Module>
         <Module title="Week 3" />
+
+        <Module title="Week 4, Lecture 1 -  Managing Client State">
+          <Lesson title="LEARNING OBJECTIVES">
+            <li className="wd-content-item">
+              Managing State and User Input with Forms
+            </li>
+            <li className="wd-content-item">
+              Sharing State, Prop Drilling, and URLs
+            </li>
+            <li>React Context</li>
+          </Lesson>
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Chapter 4 — Managing Client State
+            </li>
+          </Lesson>
+          <Lesson title="SLIDES">
+            <li className="wd-content-item">Click Events</li>
+            <li className="wd-content-item">Passing Data and Functions</li>
+            <li className="wd-content-item">useState and the Counter</li>
+          </Lesson>
+        </Module>
+
+        <Module title="Sample module (AI)">
+          <Lesson title="Sample lesson (AI)" />
+        </Module>
       </ul>
     </div>
   );
