@@ -1,0 +1,32 @@
+export default function FunctionDestructing() {
+  const add = (a: number, b: number) => a + b;
+  const sum = add(1, 2);
+  const subtract = ({ a, b }: { a: number; b: number }) => a - b;
+  const difference = subtract({ a: 4, b: 2 });
+  const multiply = ({ a, b }: { a: number; b: number }) => a * b;
+  const product = multiply({ a: 1, b: 1 });
+  const greet = (name = "Ada") => `Hi my name is ${name}`;
+  const adaGreeting = greet();
+  const divide = ({ a, b }: { a: number; b: number }) => a / b;
+  const quotient = divide({ a: 10, b: 2 });
+  return (
+    <div id="wd-function-destructing">
+      <h2>Function Destructing</h2>
+      const add = (a, b) =&gt; a + b; <br />
+      const sum = add(1, 2);          <br />
+      const subtract = (&#123; a, b &#125;) =&gt; a - b; <br />
+      const difference = subtract(&#123; a: 4, b: 2 &#125;); <br />
+      const multiply = (&#123; a, b &#125;) =&gt; a * b; <br />
+      const product = multiply(&#123; a: 1, b: 1 &#125;); <br />
+      const greet = (name = &quot;Ada&quot;) =&gt; `Hi my name is $&#123;name&#125;!`; <br />
+      const divide = (&#123; a, b &#125;) =&gt; a / b; <br />
+      const quotient = divide(&#123; a: 10, b: 2 &#125;); <br />
+      sum = {sum}                     <br />
+      difference = {difference}       <br />
+      product = {product}             <br />
+      adaGreeting = {adaGreeting}         <br />
+      quotient = {quotient}           <br />
+      <hr />
+    </div>
+  );
+}
