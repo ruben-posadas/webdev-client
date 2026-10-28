@@ -10,7 +10,7 @@ export default function BooleanVariables() {
   let true5 = floatingPointNumber !== 321.432;
   let false3 = numberVariable < 100;
   let myComparison = "hello" === "hello";
-  let sillyCheck = "123" == 123;
+  // let sillyCheck = "123" == 123;
   const true6 = numberVariable !== 0;
   return (
     <div id="wd-boolean-variables">
@@ -24,7 +24,7 @@ export default function BooleanVariables() {
       true5 = {true5 + ""}   <br />
       false3 = {false3 + ""} <br />
       myComparison = {myComparison + ""} <br />
-      sillyCheck = {sillyCheck + ""} <br />
+      {/* sillyCheck = {sillyCheck + ""} <br /> */}
       true6 = {true6 + ""}   <br />
       <hr />
     </div>
