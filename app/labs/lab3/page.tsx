@@ -34,6 +34,7 @@ import Add from "./Add";
 import Square from "./Square";
 import Highlight from "./Highlight";
 import PathParameters from "./PathParameters";
+import TodoList from "./todos/TodoList";
 
 
 export default function Lab3() {
@@ -89,6 +90,7 @@ export default function Lab3() {
         My highlight 
       </Highlight>
       <PathParameters />
+      <TodoList />
     </div>
   );
 }
