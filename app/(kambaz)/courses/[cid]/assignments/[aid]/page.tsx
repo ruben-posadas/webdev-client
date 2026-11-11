@@ -1,11 +1,13 @@
 import Link from "next/link";
+import * as db from "../../../../database";
 
 export default async function AssignmentEditor({
   params,
 }: {
   params: Promise<{ cid: string; aid: string }>;
 }) {
-  const { cid } = await params;
+  const { cid, aid } = await params;
+  const assignment = db.assignments.find((a) => a._id === aid);
   return (
     <div id="wd-assignments-editor" className="space-y-4">
       {/* Assignment Name */}
@@ -13,7 +15,7 @@ export default async function AssignmentEditor({
         <label htmlFor="wd-name" className="mb-1 block text-sm font-medium text-gray-700">
           Assignment Name
         </label>
-        <input id="wd-name" defaultValue="A1 - ENV + HTML" className="block w-full border border-gray-300 px-3 py-2 text-sm"/>
+        <input id="wd-name" defaultValue={assignment?.title ?? ""} className="block w-full border border-gray-300 px-3 py-2 text-sm"/>
       </div>
       {/* Assignment Description */}
       <div>
@@ -21,7 +23,7 @@ export default async function AssignmentEditor({
           id="wd-description"
           rows={4}
           className="block w-full border border-gray-300 px-3 py-2 text-sm"
-          defaultValue="The assignment is available online Submit a link to the landing page of your Web application running on Vercel."
+          defaultValue={assignment?.description ?? ""}
         />
       </div>
       {/* Assignment Points */}
@@ -29,7 +31,7 @@ export default async function AssignmentEditor({
         <label htmlFor="wd-points" className="pt-2 text-right text-sm font-medium text-gray-700">
           Points
         </label>
-        <input id="wd-points" type="number" defaultValue={100} className="block w-full border border-gray-300 px-3 py-2 text-sm"/>
+        <input id="wd-points" type="number" defaultValue={assignment?.points ?? 100} className="block w-full border border-gray-300 px-3 py-2 text-sm"/>
       </div>
       {/* Assignment Group */}
       <div className="grid grid-cols-[10rem_1fr] items-start gap-4">
@@ -117,7 +119,7 @@ export default async function AssignmentEditor({
             <label htmlFor="wd-due-date" className="mb-1 block text-sm font-bold">
               Due
             </label>
-            <input id="wd-due-date" type="date" defaultValue="2024-05-13" className="block w-full border border-gray-300 px-3 py-2 text-sm" />
+            <input id="wd-due-date" type="date" defaultValue={assignment?.due} className="block w-full border border-gray-300 px-3 py-2 text-sm" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -125,7 +127,7 @@ export default async function AssignmentEditor({
               <label htmlFor="wd-available-from" className="mb-1 block text-sm font-bold">
                 Available from
               </label>
-              <input id="wd-available-from" type="date" defaultValue="2024-05-06" className="block w-full border border-gray-300 px-3 py-2 text-sm" />
+              <input id="wd-available-from" type="date" defaultValue={assignment?.available} className="block w-full border border-gray-300 px-3 py-2 text-sm" />
             </div>
             <div>
               <label htmlFor="wd-available-until" className="mb-1 block text-sm font-bold">
