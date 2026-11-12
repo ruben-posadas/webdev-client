@@ -19,7 +19,7 @@ export default function Counter() {
         type="button"
         onClick={() => setCount(count - 1)}
         id="wd-counter-down-click"
-        className="rounded bg-red-600 px-3 py-1.5 text-sm font-medium text-white"
+        className="me-2 rounded bg-red-600 px-3 py-1.5 text-sm font-medium text-white"
       >
         Down
       </button>
@@ -27,7 +27,7 @@ export default function Counter() {
         type="button"
         onClick={() => setCount(7)}
         id="wd-counter-reset"
-        className="ms-2 rounded bg-pink-600 px-3 py-1.5 text-sm font-medium text-white"
+        className="me-2 rounded bg-pink-600 px-3 py-1.5 text-sm font-medium text-white"
       >
         My Reset
       </button>

@@ -17,7 +17,7 @@ export default function ArrayStateVariable() {
         type="button"
         onClick={addElement}
         id="wd-add-element-click"
-        className="mb-2 rounded bg-green-600 px-3 py-1.5 text-sm font-medium text-white"
+        className="mb-2 me-2 rounded bg-green-600 px-3 py-1.5 text-sm font-medium text-white"
       >
         Add Element
       </button>
@@ -26,7 +26,7 @@ export default function ArrayStateVariable() {
         type="button"
         onClick={() => setArray([1, 2, 3, 4, 5])}
         id="wd-clear-array-click"
-        className="mb-2 ml-2 rounded bg-yellow-500 px-3 py-1.5 text-sm font-medium text-white"
+        className="mb-2 me-2 rounded bg-yellow-500 px-3 py-1.5 text-sm font-medium text-white"
       >
         Clear Array
       </button>

@@ -24,7 +24,7 @@ export default function PassingDataOnEvent() {
         type="button"
         onClick={() => lifeIs("Life is Good!")}
         id="wd-pass-data-parameter-click"
-        className="rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
+        className="me-2 rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
       >
         Pass Data Parameter
       </button>

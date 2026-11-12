@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "./labs.css";
 import TOC from "./TOC";
 
 export default function LabsLayout({
